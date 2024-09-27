@@ -7,7 +7,6 @@ class Outer {
         fun callMe() = "Function call from inside Nested class."
     }
 }
-
 fun main(args: Array<String>) {
     // accessing member of Nested class
     println(Outer.Nested().b)

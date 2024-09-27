@@ -1,5 +1,4 @@
 package id.ac.polbeng.miza.test_kelas
-
 interface MyInterface{
     var str: String
     fun demo()
@@ -7,14 +6,12 @@ interface MyInterface{
         println("Hello")
     }
 }
-
 class MyClass: MyInterface{
     override var str: String = "Rekayasa Perangkat Lunak"
     override fun demo() {
         println("Demo Function")
     }
 }
-
 fun main() {
     val obj = MyClass()
     obj.demo()

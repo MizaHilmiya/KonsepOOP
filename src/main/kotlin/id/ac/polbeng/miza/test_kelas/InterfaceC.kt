@@ -1,19 +1,16 @@
 package id.ac.polbeng.miza.test_kelas
-
 interface X {
     fun demoX() {
         println("demoX function")
     }
     fun funcX()
 }
-
 interface Y  {
     fun demoY() {
         println("demoY function")
     }
     fun funcY()
 }
-
 // This class implements X and Y interfaces
 class MyClassA: X, Y {
     override fun funcX() {
@@ -22,9 +19,7 @@ class MyClassA: X, Y {
     override fun funcY() {
         println("Hi")
     }
-
 }
-
 fun main() {
     val obj = MyClassA()
     obj.demoX()
