@@ -1,7 +1,5 @@
 package id.ac.polbeng.miza.test_kelas
 
-import java.util.*
-
 open class Base(val name: String) {
     init{
         println("Initializing Base")
@@ -11,7 +9,7 @@ open class Base(val name: String) {
     }
 }
 class Derived(name: String , val lastName: String ):
-        Base(name.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }.also {println("Argumenr for Base: $it") }){
+        Base(name.capitalize().also {println("Argumenr for Base: $it") }){
             init{
                 println("Initilizing Derived")
             }
