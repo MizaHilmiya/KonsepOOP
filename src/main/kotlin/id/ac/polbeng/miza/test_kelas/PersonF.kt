@@ -1,5 +1,4 @@
 package id.ac.polbeng.miza.test_kelas
-
 class PersonF(val firstName:String, val lastName:String) {
     init{
         println("Sedang inisialisasi wak!")
